@@ -8,6 +8,6 @@ export const AppConfig = (): IAppConfig => ({
   client: {
     urls: process.env.CLIENT_URLS
       ? process.env.CLIENT_URLS.split(';')
-      : ['http://localhost:3000'],
+      : ['http://localhost:4200'],
   },
 });

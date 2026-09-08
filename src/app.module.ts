@@ -5,6 +5,7 @@ import { AppConfig } from './config/app.config.js';
 import { DatabaseConfig } from './config/db.config.js';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ThrottlerModule } from '@nestjs/throttler';
+import { CoreModule } from './core/core.module.js';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { ThrottlerModule } from '@nestjs/throttler';
         },
       ],
     }),
+    CoreModule,
   ],
   controllers: [AppController],
   providers: [],

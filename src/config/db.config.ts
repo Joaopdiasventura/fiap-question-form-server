@@ -5,7 +5,7 @@ interface IDatabaseConfig {
 export const DatabaseConfig = (): IDatabaseConfig => ({
   mongo: {
     uri:
-      process.env.MONGO ||
+      process.env.MONGO_URI ||
       'mongodb://localhost:27017/fiap-question-form?replicaSet=rs0&directConnection=true',
   },
 });
